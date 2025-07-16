@@ -1,3 +1,4 @@
+# Poster Finder for ICML 2025
 This script extracts poster session papers from a ICML 2025 poster session HTML web page, filters them based on the given topic using OpenAI's LLM, and saves the results to text files.
 
 ## Prerequisites
