@@ -14,58 +14,6 @@ import os
 import argparse
 from pathlib import Path
 
-example_title = (
-    "MindLLM: A Subject-Agnostic and Versatile Model for fMRI-to-text Decoding"
-)
-example_abstract = "Decoding functional magnetic resonance imaging (fMRI) signals into text has been a key challenge in the neuroscience community, with the potential to advance brain-computer interfaces and uncover deeper insights into brain mechanisms. However, existing approaches often struggle with suboptimal predictive performance, limited task variety, and poor generalization across subjects. In response to this, we propose MindLLM, a model designed for subject-agnostic and versatile fMRI-to-text decoding. MindLLM consists of an fMRI encoder and an off-the-shelf LLM. The fMRI encoder employs a neuroscience-informed attention mechanism, which is capable of accommodating subjects with varying input shapes and thus achieves high-performance subject-agnostic decoding. Moreover, we introduce Brain Instruction Tuning (BIT), a novel approach that enhances the model's ability to capture diverse semantic representations from fMRI signals, facilitating more versatile decoding. We evaluate MindLLM on comprehensive fMRI-to-text benchmarks. Results demonstrate that our model outperforms the baselines, improving downstream tasks by $12.0\%$, unseen subject generalization by $24.5\%$, and novel task adaptation by $25.0\%$. Furthermore, the attention patterns in MindLLM provide interpretable insights into its decision-making process."
-example_html_chunk = """
-
-                <div class="track-schedule-card">
-                    <div None  >
-                        <div class="btn-spacer float-end track-pad" style="position:relative; top:-3px">
-                            
-                            <div class="track-child-bookmark">
-
-    <span id="bookmark-number-1" class="bump20 bookmark-cell fa-lg" title="Add / Remove Bookmark"
-          onclick="toggle_bookmark(bookmark_id='bookmark-number-1', event_id='45933', bookmark_event_number='1',
-                  alt_bookmark_element_id='');">
-        
-            
-                <i class="fa-bookmark fa-solid solid-bookmark" style="display:none;"></i>
-                <i class="fa-bookmark fa-regular regular-bookmark" ></i>
-            
-        
-    </span>
-
-
-</div>
-                            <br>
-                            
-                                <div class="float-end small">
-                                    Poster
-                                </div>
-                            
-                            
-                                <div class="small" title="Poster Position">#W-100</div>
-                            
-                        </div>
-                        
-
-                        <h5><strong><a href="/virtual/2025/poster/45933">MindLLM: A Subject-Agnostic and Versatile Model for fMRI-to-text Decoding</a></strong></h5>
-
-
-                        <p class="text-muted">
-                            Weikang Qiu &middot; Zheng Huang &middot; Haoyu Hu &middot; Aosong Feng &middot; Yujun Yan &middot; ZHITAO YING
-                        </p>
-
-                    </div>
-                    <div class="abstract">
-                        <p>Decoding functional magnetic resonance imaging (fMRI) signals into text has been a key challenge in the neuroscience community, with the potential to advance brain-computer interfaces and uncover deeper insights into brain mechanisms. However, existing approaches often struggle with suboptimal predictive performance, limited task variety, and poor generalization across subjects. In response to this, we propose MindLLM, a model designed for subject-agnostic and versatile fMRI-to-text decoding. MindLLM consists of an fMRI encoder and an off-the-shelf LLM. The fMRI encoder employs a neuroscience-informed attention mechanism, which is capable of accommodating subjects with varying input shapes and thus achieves high-performance subject-agnostic decoding. Moreover, we introduce Brain Instruction Tuning (BIT), a novel approach that enhances the model's ability to capture diverse semantic representations from fMRI signals, facilitating more versatile decoding. We evaluate MindLLM on comprehensive fMRI-to-text benchmarks. Results demonstrate that our model outperforms the baselines, improving downstream tasks by $12.0\%$, unseen subject generalization by $24.5\%$, and novel task adaptation by $25.0\%$. Furthermore, the attention patterns in MindLLM provide interpretable insights into its decision-making process.</p>
-                    </div>
-
-                </div>
-                    """
-
 
 def extract_title_abstract_pairs(html_content):
     """
@@ -318,7 +266,7 @@ def parse_arguments():
         "--input",
         "-i",
         type=str,
-        default="posters_4.html",
+        default="posters.html",
         help="Input HTML file (default: posters.html)",
     )
 

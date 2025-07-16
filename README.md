@@ -12,7 +12,7 @@ This script extracts poster session papers from a ICML 2025 poster session HTML 
     export OPENAI_API_KEY="your-api-key-here"
     ```
 ## Usage
-Go to the poster session page in `icml.cc` and save the HTML page as `posters.html`.  
+Go to the poster session page in `icml.cc` and save the HTML page as `posters.html`.  (e.g. https://icml.cc/virtual/2025/session/50260)
 Then run the script with the following command:
 ```bash
 # Basic usage:
