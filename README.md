@@ -20,8 +20,8 @@ Then run the script with the following command:
 python extract_papers.py --input posters.html --topics "LLM agents" "fine-tuning" --output-prefix "icml2025"
 
 # Alternative usage:
-python extract_papers.py -i conference.html -t "machine learning" "AI" -o "nips2024"
+python extract_papers.py -i posters.html -t "LLM agents" "fine-tuning" -o "icml2025"
 
-# Run with defaults (input: posters.html, topics: LLM-related):
+# Run with defaults (input: posters.html, topics: LLM Agent-related):
 python extract_papers.py
 ```
